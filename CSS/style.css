@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+:root{
+    --bg-pagina:#EAEAEA;
+    --bg-receita:#FFF;
+    --color-title:#1B1B1B;
+    --color-legenda:#8F8F8F;
+    --text-color:#3939A;
+}
+
+body{
+    width: 100vw;
+    background-color: var(--bg-pagina);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    width:85vw;
+    background-color: var(--bg-receita);
+
+    
+}
+
+.imagem{
+    width:100%;
+    margin-top: 50px;
+}
+
+.imagem figure{
+    width:95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.imagem figure figcaption{
+    color:var(--color-legenda);
+}
+.imagem img{
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.imagem h1{
+    text-align: center;
+    font-size: 28px;
+    color:var(--color-title);
+    
+}
+
+.texto{
+    margin-top:50px;
+    
+}
+.texto p{
+    padding-left: 40px;
+    color:var(--text-color);
+}
+
+.texto ul>li,ol>li,p{
+    line-height: 3;
+    list-style-position:inside;
+    font-size: 16px;
+    color:var(--text-color);
+}
+.texto h2{
+    text-align: center;
+    margin: 25px auto;
+    font-size: 20px;
+    color:var(--color-title);
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer p,a{
+    color:var(--color-legenda);
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--color-title);
+    background-color: var(--bg-pagina);
+}
